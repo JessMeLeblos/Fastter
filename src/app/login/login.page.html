@@ -1,0 +1,79 @@
+<ion-header [translucent]="true">
+  
+<ion-toolbar>
+    <ion-row class="back">
+       <ion-title> 
+         <p class="tit"> Iniciar Sesión </p>
+       </ion-title>
+  </ion-row>
+<!--Boton Menu-->
+  <ion-buttons slot="start">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+    <div class="login-container">
+      <div class="login1">
+        <h2 class="title-fastter">Fastter</h2>
+  <form>
+           
+
+              <ion-item lines="center">
+                <ion-label position="floating">Email</ion-label>
+                <ion-input class="email" type="text" #email required></ion-input>
+
+                <ion-label position="floating">Password</ion-label>
+                <ion-input class="password" type="password" #password required></ion-input>
+              </ion-item>
+              <br>
+              <ion-row>
+                <ion-col>
+                  <button class="submit" type="submit" (click)="onLogin(email, password)">Iniciar Sesión</button>
+                </ion-col>
+               
+              </ion-row>
+              <br>
+              <ion-row>
+                <ion-col>
+                  <p class="ion-text-end">
+                    <a routerLink="/forgot-password">Recuperar contraseña</a>
+                  </p>
+                </ion-col>
+              </ion-row>
+              <br> 
+              <ion-row>
+                <ion-col>
+                  <p class="ion-text-end">
+                    <a routerLink="/register">Crear cuenta</a>
+                  </p>
+                </ion-col>
+              </ion-row>
+  </form>
+
+    </div>
+
+      <div class="login">
+        <h2>Inisiar Sesión Con:</h2>
+        <div class="login-items">
+          <ion-row>
+            <ion-col>
+              <button type="submit" (click)="onGoogle()"> <ion-icon name="logo-google" style="font-size: 30px"></ion-icon>
+              </button>
+            <!--<ion-button type="submit" color="danger"  class="google" >
+                Login with Google
+              </ion-button>-->
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+
+      </div>
+        </div>
+
+
+  
+</ion-content>

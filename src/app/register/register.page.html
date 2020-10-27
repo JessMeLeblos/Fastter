@@ -1,0 +1,49 @@
+<ion-header>
+  
+  <ion-toolbar>
+      <ion-row class="back">
+         <ion-title> 
+           <p class="tit">Registrarse</p>
+         </ion-title>
+    </ion-row>
+  <!--Boton Menu-->
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+
+  <div class="container">
+    <div class="register-container">
+      <div class="register">
+        <h2 class="title-fastter">Registra te en Fastter</h2>
+  <form>
+   <ion-item lines="center">
+    <ion-label position="floating">Email</ion-label>
+     <ion-input class="email" type="text" #email required></ion-input>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input class="password" type="password" #password required></ion-input>
+        </ion-item>
+        <br>
+  <ion-row>
+   <ion-col>
+    <button class="submit" type="submit" (click)="onRegister(email, password)"
+    >Iniciar Sesión</button>
+   </ion-col>               
+  </ion-row>
+  </form>
+    <br>
+  <ion-row>
+    <ion-col>
+      <p>
+        <a routerLink="/login">¿Ya tienes cuenta? Inicia Sesion</a>
+      </p>
+    </ion-col>
+  </ion-row>
+</div>
+</div>
+</div>
+</ion-content>

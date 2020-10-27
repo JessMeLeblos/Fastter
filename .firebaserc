@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "faste-72b00": {
+      "hosting": {
+        "app": [
+          "faste-72b00"
+        ]
+      }
+    }
+  }
+}
